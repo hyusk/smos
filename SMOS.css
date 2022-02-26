@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Dancing+Script&family=Indie+Flower&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+ul{
+    margin: 0%;
+    padding: 0%;
+}
+li{
+    list-style-type: none;
+}
+h2{
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2.4em;
+}
+#texteIntro p{
+    font-family: 'Advent pro', cursive;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav {
+    overflow: hidden;/* tout ce qui dépasse sera caché */
+    background-color: #142763;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li{
+    float: right;
+    font-size: 1.2em;
+}
+header li a{
+    font-size: 1.58em;
+    color: #C122B3;
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo{
+    color: #C122B3;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    float: left;
+}
+#imagePrincipale{
+    padding-top: 60px;
+    background: url(images/ImageFondEcran.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1{
+    font-family: 'Dancing script', cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 6em;
+    margin-top: 110px;
+    text-shadow: 1px 3px 2px black;
+}
+#premierTrait{
+    height: 1px;
+    width: 50%;
+    margin: -3px auto;
+    background-color: #fffae1;
+    box-shadow: 1px 3px 2px black;
+}
+h3{ 
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2.7em;
+    text-shadow: 1px 3px 2px black;
+}
+
+#presentation{
+  background-color: #fffae1;
+  padding: 10px 0px 100px 0px;
+}
+
+#texteIntro{
+  padding: 0px 20%;
+  text-align: center;
+}
+h4{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 2em;
+    margin: 15px;
+    font-weight: 300;
+}
+h5{
+    font-family: 'Advent Pro', cursive;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+    font-weight: 300;
+  }
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+#exemplesDeProjet {
+    padding-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+  }
+  
+  #presentation{
+    margin: 0;
+    background: #fffae1;
+    background: -webkit-linear-gradient(to top, #fffae1, #fffae1);
+    background: linear-gradient(to top, #fffae1, #fffae1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .content {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    color: white;
+    padding: 30px 10%;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  
+  .exemple1 {
+    border-radius: 16px;
+    width: 360px;
+    height: 360px;
+    background: url(images/image1.jpeg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
+  }
+  .exemple1:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+  }
+  .exemple1 .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .exemple1 .img span {
+    width: 25%;
+    height: 100%;
+    background: url(images/image1.jpeg);
+    transition: 0.5s;
+  }
+  .exemple1 .img span:nth-child(1) {
+    background-position: 0;
+    transition-delay: 0;
+  }
+  .exemple1 .img span:nth-child(2) {
+    background-position: 33.33333%;
+    transition-delay: 0.1s;
+  }
+  .exemple1 .img span:nth-child(3) {
+    background-position: 66.66666%;
+    transition-delay: 0.2s;
+  }
+  .exemple1 .img span:nth-child(4) {
+    background-position: 100%;
+    transition-delay: 0.3s;
+  }
+  
+  .exemple1:hover .img > span {
+    transform: translateY(-100%);
+  }
+  .exemple1:hover .content {
+    transform: translateY(0%);
+    transition: 1s;
+    transition-delay: 0.1s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .exemple2 {
+    margin-left: 0px;
+    border-radius: 16px;
+    width: 360px;
+    height: 360px;
+    background: url(images/image3.jpeg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
+  }
+  .exemple2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+  }
+  .exemple2 .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .exemple2 .img span {
+    width: 25%;
+    height: 100%;
+    background: url(images/image3.jpeg);
+    transition: 0.5s;
+  }
+  .exemple2 .img span:nth-child(1) {
+    background-position: 0;
+    transition-delay: 0;
+  }
+  .exemple2 .img span:nth-child(2) {
+    background-position: 33.33333%;
+    transition-delay: 0.1s;
+  }
+  .exemple2 .img span:nth-child(3) {
+    background-position: 66.66666%;
+    transition-delay: 0.2s;
+  }
+  .exemple2 .img span:nth-child(4) {
+    background-position: 100%;
+    transition-delay: 0.3s;
+  }
+  
+  .exemple2:hover .img > span {
+    transform: translateY(-100%);
+  }
+  .exemple2:hover .content {
+    transform: translateY(0%);
+    transition: 1s;
+    transition-delay: 0.1s;
+  }
+  
+  
+  .exemple3 {
+    margin-top: 15%;
+    margin-left: 0px;
+    border-radius: 16px;
+    width: 360px;
+    height: 360px;
+    background: url(images/image4\ \(1\).jpeg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
+  }
+  .exemple3:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+  }
+  .exemple3 .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .exemple3 .img span {
+    width: 25%;
+    height: 100%;
+    background: url(images/image4\ \(1\).jpeg);
+    transition: 0.5s;
+  }
+  .exemple3 .img span:nth-child(1) {
+    background-position: 0;
+    transition-delay: 0;
+  }
+  .exemple3 .img span:nth-child(2) {
+    background-position: 33.33333%;
+    transition-delay: 0.1s;
+  }
+  .exemple3 .img span:nth-child(3) {
+    background-position: 66.66666%;
+    transition-delay: 0.2s;
+  }
+  .exemple3 .img span:nth-child(4) {
+    background-position: 100%;
+    transition-delay: 0.3s;
+  }
+  
+  .exemple3:hover .img > span {
+    transform: translateY(-100%);
+  }
+  .exemple3:hover .content {
+    transform: translateY(0%);
+    transition: 1s;
+    transition-delay: 0.1s;
+  }
+  
+  .exemple4 {
+    margin-top: 15%;
+    margin-left: 0px;
+    border-radius: 16px;
+    width: 360px;
+    height: 360px;
+    background: url(images/image2.jpeg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
+  }
+  .exemple4:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+  }
+  .exemple4 .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .exemple4 .img span {
+    width: 25%;
+    height: 100%;
+    background: url(images/image2.jpeg);
+    transition: 0.5s;
+  }
+  .exemple4 .img span:nth-child(1) {
+    background-position: 0;
+    transition-delay: 0;
+  }
+  .exemple4 .img span:nth-child(2) {
+    background-position: 33.33333%;
+    transition-delay: 0.1s;
+  }
+  .exemple4 .img span:nth-child(3) {
+    background-position: 66.66666%;
+    transition-delay: 0.2s;
+  }
+  .exemple4 .img span:nth-child(4) {
+    background-position: 100%;
+    transition-delay: 0.3s;
+  }
+  
+  .exemple4:hover .img > span {
+    transform: translateY(-100%);
+  }
+  .exemple4:hover .content {
+    transform: translateY(0%);
+    transition: 1s;
+    transition-delay: 0.1s;
+  }
+
+
+/* #exemplesDeProjet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+
+.exemple h4{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 15px;
+  font-weight: 300;
+}
+.exemple img {
+  border-radius: 13px;
+  box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+.exemple img:hover{
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 0.33s ease-in-out;
+} */
+
+/* ------------------------------------------------------------------------------------------------- */
+footer{
+    background-color: #142763;
+    color: #C122B3; 
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form{
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button{
+    background-color: #fffae1;
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+}
+textarea{
+    height: 120px;
+}
+button{
+    font-size: 1.5em;
+    background-color: #fffae1;
+}
+button:hover{
+    background-color: #C122B3;
+    color: #fffae1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#deuxiemeTrait{
+    height: 1px;
+    width: 75%;
+    background-color: #fffae1;
+    margin: 60px auto;
+}
+#icons {
+    text-align: center;
+}
+#icons a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.7em;
+    color: #C122B3;
+}
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}  
